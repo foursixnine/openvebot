@@ -7,6 +7,10 @@ Bot para telegram para obtener los enlaces a los grupos de la OpenVe a traves de
 * beautifulsoup4
 * [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
 
+## Instalacion
+
+* `pip install -r requirements.txt`
+
 ## Configuración
 
 Modificar la constante TOKEN en el archivo bot.py, agregando el token generado por @botfather en telegram, se debe habilitar la opcion de bot inline.
