@@ -23,6 +23,7 @@ Una vez hecho esto, solo es necesario ejecutar el archivo bot.py
 - [x] Procesar inline-querys de tipo Articulo.
 - [x] Devolver nombre, enlace y admins del grupo en el query result.
 - [x] Busqueda simple por el nombre.
+- [ ] Actualizar a la nueva version del repositorio
 
 - [x] Corregir `Bad Request: RESULTS_TOO_MUCH` al estar el query vacio
 

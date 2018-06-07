@@ -32,7 +32,7 @@ def start(bot, update):
 
 
 def help(bot, update):
-    update.message.reply_text('Si tienes problemas con el bot, contacta con @alexr1712 mi creador!')
+    update.message.reply_text('Si tienes problemas con el bot, contacta con @alexr1712 mi creador! o al equipo de openve via https://t.me/openve')
 
 
 def escape_markdown(text):
