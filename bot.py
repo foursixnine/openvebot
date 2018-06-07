@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# Simple Bot for get OpenVe Telegram Links
+# Simple Bot to get OpenVe Telegram Links
 from uuid import uuid4
 
 import re
 import random
 import requests
+import sys
 from bs4 import BeautifulSoup
 
 from telegram import InlineQueryResultArticle, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, \
@@ -21,7 +22,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 # Token obtenido de @botfather en Telegram
-TOKEN = "TOKEN_BOT_FATHER"
+TOKEN = sys.argv[1] # Let it die token needs to be specified.
 
 # Define a few command handlers. These usually take the two arguments bot and
 # update. Error handlers also receive the raised TelegramError object in error.
