@@ -42,11 +42,23 @@ def escape_markdown(text):
     return re.sub(r'([%s])' % escape_chars, r'\\\1', text)
 
 
-def inlinequery(bot, update):
-    r = requests.get('https://github.com/OpenVE/comunidades-en-telegram/blob/master/README.md')
-    soup = BeautifulSoup(r.text, "html.parser")
+"""
+If url and get is ok
+  check with extension
+    get all elements with h3
+      for every element of h3 get next sibling
+        if sibling is ul/ol element belongs to a section and sibling is channels of that section
+            map sections to known sections
+            return instance of GroupOfChannels
+"""
+
+def parseMarkdownTree(url):
+    r = requests.get(url)
+    markdown.markdownFromFile(r.)
     results = list()
-    query = update.inline_query.query
+
+def inlinequery(bot, update):
+    channels, comunities, inactive = parseMarkdownTree('https://github.com/OpenVE/comunidades-en-telegram/blob/master/README.md')
     communities = soup.find_all('tr')[2:]
     if len(query) == 0:
         random.shuffle(communities)
